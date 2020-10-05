@@ -1,0 +1,45 @@
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "2-components/_form.scss";
+@import "2-components/_button.scss";
+@import "2-components/_dropdown-menu.scss";
+@import "2-components/_icon.scss";
+@import "2-components/_slider-arrow.scss";
+@import "2-components/_nav-tabs.scss";
+
+//=======================================
+//          3 - ELEMENTS FOLDER
+//=======================================
+@import "3-elements/_section-heading.scss";
+@import "3-elements/_resume-card.scss";
+@import "3-elements/_reference.scss";
+@import "3-elements/_service-card.scss";
+@import "3-elements/_portfolio-card.scss";
+@import "3-elements/_skills-card.scss";
+@import "3-elements/_counter-card.scss";
+@import "3-elements/_pricing-card.scss";
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import "4-layouts/_navbar.scss";
+
+//=======================================
+//          5 - PAGES FOLDER
+//=======================================
+@import "5-pages/_index.scss";
+
+//=======================================
+//          6 - RESPONSIVE FOLDER
+//=======================================

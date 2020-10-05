@@ -1,0 +1,50 @@
+
+
+
+/*=====================================
+          SECTION HEADING STYLE
+======================================*/
+.section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: $heading__color;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    
+        span {
+            color: $brand__color;
+        }
+    }
+
+    h2 {
+        span {
+            display: block;
+        }
+    }
+}
+
+//  SECTION HEADING RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .section-heading {
+        margin-bottom: 25px;
+        
+        p {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 38px;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
