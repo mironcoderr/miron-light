@@ -13,7 +13,7 @@
     }
 }
 
-.banner-oly {
+.banner-bg {
     background: url(../../images/banner-bg.png);
     @include background__property;
     padding: 120px 0px;
@@ -269,7 +269,6 @@
             ABOUT PART STYLE
 ======================================*/
 .about-part {
-    background: $wh__color;
     padding: 88px 0px 0px;
 }
 

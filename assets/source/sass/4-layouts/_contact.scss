@@ -21,7 +21,7 @@
         .address-icon {
             .icon-inline {
                 color: $wh__color;
-                background: $heading__color;
+                background: $brand__color;
                 transform: translateY(-3px);
             }
         }
@@ -33,6 +33,7 @@
 
     .icon-inline {
         color: $wh__color;
+        background: $heading__color;
     }
 }
 

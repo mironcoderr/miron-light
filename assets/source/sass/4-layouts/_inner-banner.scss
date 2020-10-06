@@ -1,0 +1,35 @@
+
+
+
+/*=====================================
+         INNER BANNER PART STYLE
+======================================*/
+.inner-banner {
+    background: url(../../images/inner-bg.jpg);
+    @include background__property;
+}
+
+.inner-oly {
+    background: rgba(254, 99, 71, 0.9);
+    padding: 98px 0px 175px;
+}
+
+.inner-content {
+    text-align: center;
+
+    h1 {
+        font-size: 45px;
+        color: $wh__color;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+}
+
+// INNER BANNER RESPONSIVE STYLE 
+
+@media (max-width: 575px) {
+    .inner-oly {
+        padding: 60px 0px 118px;
+    }
+}

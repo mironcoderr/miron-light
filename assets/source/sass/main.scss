@@ -16,6 +16,9 @@
 @import "2-components/_dropdown-menu.scss";
 @import "2-components/_icon.scss";
 @import "2-components/_slider-arrow.scss";
+@import "2-components/_breadcrumb.scss";
+@import "2-components/_select-option.scss";
+@import "2-components/_pagination.scss";
 @import "2-components/_nav-tabs.scss";
 
 //=======================================
@@ -31,6 +34,7 @@
 @import "3-elements/_pricing-card.scss";
 @import "3-elements/_testimonial-card.scss";
 @import "3-elements/_blog-card.scss";
+@import "3-elements/_feature-card.scss";
 
 //=======================================
 //          4 - LAYOUTS FOLDER
@@ -38,11 +42,13 @@
 @import "4-layouts/_navbar.scss";
 @import "4-layouts/_contact.scss";
 @import "4-layouts/_footer.scss";
+@import "4-layouts/_inner-banner.scss";
 
 //=======================================
 //          5 - PAGES FOLDER
 //=======================================
 @import "5-pages/_index.scss";
+@import "5-pages/_portfolio.scss";
 
 //=======================================
 //          6 - RESPONSIVE FOLDER

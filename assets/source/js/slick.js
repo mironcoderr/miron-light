@@ -98,9 +98,55 @@ $('.port-slider').slick({
 });
 
 
-
-
-
+// FOR FEATURE SECTION SLIDER
+$('.feature-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    arrows: false,
+    fade: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: '<i class="fas fa-long-arrow-alt-right dandik"></i>',
+    nextArrow: '<i class="fas fa-long-arrow-alt-left bamdik"></i>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      }
+    ]
+});
 
 
 

@@ -51,6 +51,20 @@ jQuery(document).ready(function($){
 });
 
 
+// FOR PORTFOLIO CATEGORY ACTIVE MENU
+$(".menu").on("click", function(){
+    $(".menu").removeClass("active");
+    $(this).addClass("active");
+});
+  
+
+// FOR PORTFOLIO PAGINATION
+$(".page-link").on("click", function(){
+    $(".page-link").removeClass("active");
+    $(this).addClass("active");
+});
+  
+
 
 
 // // FOR PASSWORD HIDE & SHOW

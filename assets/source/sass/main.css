@@ -322,6 +322,79 @@ button:focus {
 }
 
 /*=====================================
+      INNER PORTFOLIO SEARCH STYLE
+======================================*/
+.port-src {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.port-form {
+  padding: 7px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  display: inline-block;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.port-form input {
+  border: none;
+  width: 320px;
+  height: 50px;
+  padding: 0px 20px;
+  background: transparent;
+}
+
+.port-form .btn-inline:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+@media (max-width: 575px) {
+  .port-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 15px;
+    padding: 15px 10px;
+  }
+  .port-form input {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .port-form .custom-select {
+    width: 100%;
+    height: 45px;
+    border-left: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .port-form input {
+    width: 215px;
+  }
+}
+
+/*=====================================
             ALL BUTTON STYLE
 ======================================*/
 .btn {
@@ -616,6 +689,107 @@ button:focus {
   .bamdik {
     left: 0px;
   }
+}
+
+/*=====================================
+         BREADCRUMB PART STYLE
+======================================*/
+.breadcrumb {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  margin-bottom: 0px;
+  background: none;
+  border-radius: 0px;
+}
+
+.breadcrumb-item {
+  text-transform: capitalize;
+}
+
+.breadcrumb-item a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #dddddd;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
+
+/*=====================================
+            SELECT OPTION STYLE
+======================================*/
+.custom-select {
+  border-radius: 0px;
+  border: none;
+  width: 120px;
+  font-size: 14px;
+  border-left: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+
+.custom-select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*=====================================
+         PAGINATION PART STYLE
+======================================*/
+.pagination {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-item {
+  margin: 0px 6px;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+  border-radius: 50%;
+}
+
+.page-item .active {
+  color: #ffffff;
+  background: #fe6347;
+}
+
+.page-link {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  padding: 0px;
+  color: #777777;
+  background: #ffeded;
+}
+
+.page-link:hover {
+  color: #ffffff;
+  background: #fe6347;
+}
+
+.page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*=====================================
@@ -1783,6 +1957,48 @@ button:focus {
   text-transform: capitalize;
 }
 
+/*=====================================
+            FEATURE CARD STYLE
+======================================*/
+.feature-card {
+  width: 180px;
+  margin: 0px 25px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 30px 15px 35px;
+  background: #ffeded;
+}
+
+.feature-card:hover i {
+  color: #fff;
+  background: #fe6347;
+}
+
+.feature-card i {
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  line-height: 55px;
+  text-align: center;
+  color: #fe6347;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.feature-card h6 {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 /*======================================
            NAVBAR PART STYLE
 =======================================*/
@@ -1921,7 +2137,7 @@ button:focus {
 
 .contact-address:hover .address-icon .icon-inline {
   color: #ffffff;
-  background: #48455a;
+  background: #fe6347;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -1932,6 +2148,7 @@ button:focus {
 
 .address-icon .icon-inline {
   color: #ffffff;
+  background: #48455a;
 }
 
 .address-text h4 {
@@ -2082,6 +2299,39 @@ button:focus {
 }
 
 /*=====================================
+         INNER BANNER PART STYLE
+======================================*/
+.inner-banner {
+  background: url(../../images/inner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inner-oly {
+  background: rgba(254, 99, 71, 0.9);
+  padding: 98px 0px 175px;
+}
+
+.inner-content {
+  text-align: center;
+}
+
+.inner-content h1 {
+  font-size: 45px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 575px) {
+  .inner-oly {
+    padding: 60px 0px 118px;
+  }
+}
+
+/*=====================================
             BANNER PART STYLE
 ======================================*/
 .banner-part {
@@ -2094,7 +2344,7 @@ button:focus {
   position: relative;
 }
 
-.banner-oly {
+.banner-bg {
   background: url(../../images/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -2361,7 +2611,6 @@ button:focus {
             ABOUT PART STYLE
 ======================================*/
 .about-part {
-  background: #ffffff;
   padding: 88px 0px 0px;
 }
 
@@ -3195,6 +3444,143 @@ button:focus {
   }
   .blog-btn {
     margin-top: 0px;
+  }
+}
+
+/*=====================================
+            FEATURE PART STYLE
+======================================*/
+.feature-part {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .feature-part {
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  .feature-card {
+    margin: 0px 8px;
+    padding: 30px 18px 35px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .feature-card {
+    padding: 30px 30px 35px;
+  }
+}
+
+/*=====================================
+        INNER PORTFOLIO PART STYLE
+======================================*/
+.inner-port-part {
+  padding: 32px 0px 0px;
+}
+
+.inner-port-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.inner-port-heading h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+.port-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 35px;
+}
+
+.port-menu li {
+  margin: 0px 12px;
+}
+
+.port-menu li .active {
+  color: #ffffff;
+  background: #fe6347;
+}
+
+.menu {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #48455a;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  letter-spacing: 0.3px;
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: 1px solid #fe6347;
+  border-bottom: 2px solid #fe6347;
+}
+
+.menu:focus {
+  outline: none;
+}
+
+.port-parent {
+  margin-bottom: 25px;
+}
+
+.port-parent .port-card {
+  margin: 25px 10px;
+}
+
+.port-inner-btn {
+  top: 40%;
+}
+
+@media (max-width: 767px) {
+  .inner-port-part {
+    padding: 0px 0px;
+  }
+  .inner-port-heading {
+    margin-bottom: 30px;
+  }
+  .inner-port-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .port-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .port-menu li {
+    margin: 7px 7px;
+  }
+  .port-parent .port-card {
+    margin: 15px 0px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 575px) {
+  .inner-port-part .container {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .inner-port-part .container {
+    max-width: 568px;
+  }
+  .port-parent .col-sm-6 {
+    padding: 0px 10px;
+  }
+  .port-parent .port-card {
+    margin: 10px 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
