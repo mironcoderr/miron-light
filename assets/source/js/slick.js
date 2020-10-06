@@ -53,7 +53,70 @@ $('.port-slider').slick({
         }
       }
     ]
-  });
+});
+
+
+  // FOR TESTIMONIAL SLIDER
+  $('.testi-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    arrows: true,
+    fade: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<i class="fas fa-long-arrow-alt-right dandik"></i>',
+    nextArrow: '<i class="fas fa-long-arrow-alt-left bamdik"></i>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      }
+    ]
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   // FOR USER PROFILE NAV MENU
@@ -145,46 +208,6 @@ $('.port-slider').slick({
         breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-
-  // FOR TESTIMONIAL SLIDER
-  $('.testi-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    autoplay: true,
-    arrows: false,
-    fade: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: '<i class="fas fa-long-arrow-alt-right dandik"></i>',
-    nextArrow: '<i class="fas fa-long-arrow-alt-left bamdik"></i>',
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
           slidesToScroll: 1
         }
       }

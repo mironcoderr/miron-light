@@ -190,6 +190,12 @@
     padding: 143px 0px 0px;
 }
 
+.resume-heading {
+    h2 {
+        width: 440px;
+    }
+}
+
 .resume-cate-btn {
     @include flex__center;
 
@@ -228,6 +234,12 @@
 @media (max-width: 767px) {
     .resume-part {
         padding: 60px 0px 0px;
+    }
+
+    .resume-heading {
+        h2 {
+            width: 100%;
+        }
     }
 
     .resume-cate-btn {
@@ -452,6 +464,10 @@
 
 .service-heading {
     margin-bottom: 130px;
+
+    h2 {
+        width: 500px;
+    }
 }
 
 .service-btn {
@@ -515,6 +531,12 @@
 ======================================*/
 .coding-part{
     padding: 145px 0px 0px;
+}
+
+.coding-heading {
+    h2 {
+        width: 530px;
+    }
 }
 
 .coding-content {
@@ -632,6 +654,12 @@
     }
 }
 
+.port-heading {
+    h2 {
+        width: 570px;
+    }
+}
+
 .port-slider {
     &:hover {
         .dandik,
@@ -669,14 +697,16 @@
         padding: 50px 0px 0px;
     }
 
+    .port-card {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 767px) {
     .port-heading {
         h2 {
             width: 100%;
         }
-    }
-
-    .port-card {
-        margin: 0px 15px;
     }
 }
 
@@ -695,6 +725,12 @@
 ======================================*/
 .skills-part {
     padding: 145px 0px 0px;
+}
+
+.skills-heading {
+    h2 {
+        width: 430px;
+    }
 }
 
 // SKILLS RESPONSIVE STYLE
@@ -916,6 +952,10 @@
 
 .pricing-heading {
     margin-bottom: 90px;
+
+    h2 {
+        width: 500px;
+    }
 }
 
 // PRICING RESPONSIVE STYLE
@@ -998,6 +1038,12 @@
     padding: 175px 0px 0px;
 }
 
+.faq-heading {
+    h2 {
+        width: 570px;
+    }
+}
+
 .faq-child {
     margin-bottom: 30px;
     background: $wh__color;
@@ -1037,5 +1083,144 @@
         line-height: 26px;
         padding: 20px 25px;
         border-top: 1px solid $border__color;
+    }
+}
+
+// FAQ RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .faq-part {
+        padding: 20px 0px 0px;
+    }
+
+    .faq-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+/*=====================================
+          TESTIMONIAL PART STYLE
+======================================*/
+.testi-part {
+    padding: 113px 0px 0px;
+}
+
+.testi-heading {
+    h2 {
+        width: 570px;
+    }
+}
+
+.testi-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+// TESTIMONIAL RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .testi-part {
+        padding: 35px 0px 0px;
+    }
+
+    .testi-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .testi-part {
+        .container {
+            max-width: 570px;
+        }
+    }
+}
+
+/*=====================================
+            BLOG PART STYLE
+======================================*/
+.blog-part{
+    padding: 140px 0px 0px;
+}
+
+.blog-heading {
+    h2 {
+        width: 420px;
+    }
+}
+
+.blog-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+// BLOG RESPONSIVE PART
+
+@media (max-width: 767px) {
+    .blog-part {
+        padding: 60px 0px 0px;
+    }
+
+    .blog-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .blog-card {
+        margin-bottom: 45px;
+    }
+
+    .blog-text {
+        h4 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .suggest-title {
+        margin-bottom: 8px;
+    }
+
+    .blog-btn {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-card {
+        margin-bottom: 45px;
+    }
+
+    .blog-text {
+        h4 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .blog-btn {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-text {
+        h4 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .suggest-title {
+        margin-bottom: 10px;
+    }
+
+    .blog-btn {
+        margin-top: 0px;
     }
 }
