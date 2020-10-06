@@ -228,6 +228,100 @@ button:focus {
 }
 
 /*=====================================
+            CONTACT FORM STYLE
+======================================*/
+.input-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-grid input {
+  width: 100%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  color: #48455a;
+  background: #e7e7e7;
+  border: 1px solid transparent;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.input-grid input:focus-within {
+  background: #fff3f3;
+  border: 1px solid #fe6347;
+}
+
+.input-grid textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  height: 200px;
+  width: 100%;
+  border: 1px solid transparent;
+  color: #48455a;
+  background: #e7e7e7;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.input-grid textarea:focus-within {
+  background: #fff3f3;
+  border: 1px solid #fe6347;
+}
+
+::-webkit-file-upload-button {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: capitalize;
+  margin-top: 9px;
+  cursor: pointer;
+  color: #777777;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.input-btn .btn {
+  margin: 30px 0px 0px 10px;
+}
+
+@media (max-width: 991px) {
+  .contact-form {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .input-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input-btn .btn {
+    margin: 30px 0px 0px;
+  }
+}
+
+/*=====================================
             ALL BUTTON STYLE
 ======================================*/
 .btn {
@@ -403,12 +497,12 @@ button:focus {
             ALL ICON STYLE
 ======================================*/
 .icon {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
   text-align: center;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 16px;
   text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
@@ -480,9 +574,9 @@ button:focus {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 16px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
   text-align: center;
   border-radius: 50%;
   color: #ffffff;
@@ -1811,6 +1905,183 @@ button:focus {
 }
 
 /*=====================================
+            CONTACT PART STYLE
+======================================*/
+.contact-part {
+  padding: 142px 0px 0px;
+}
+
+.contact-heading h2 {
+  width: 420px;
+}
+
+.contact-address {
+  text-align: center;
+}
+
+.contact-address:hover .address-icon .icon-inline {
+  color: #ffffff;
+  background: #48455a;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.address-icon {
+  margin-bottom: 28px;
+}
+
+.address-icon .icon-inline {
+  color: #ffffff;
+}
+
+.address-text h4 {
+  line-height: 20px;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+}
+
+.address-text p {
+  color: #48455a;
+  line-height: 24px;
+}
+
+.address-text p span {
+  display: block;
+  margin-top: 8px;
+}
+
+.contact-img img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact-part {
+    padding: 60px 0px 0px;
+  }
+  .contact-part .mb-5 {
+    margin-bottom: 10px !important;
+  }
+  .contact-heading h2 {
+    width: 100%;
+  }
+  .contact-address {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .address-text p {
+    font-size: 15px;
+  }
+}
+
+/*=====================================
+            FOOTER PART STYLE
+======================================*/
+.footer-part {
+  padding: 100px 0px 100px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-logo a img {
+  width: 160px;
+}
+
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 55px;
+}
+
+.footer-icon li {
+  margin: 0px 15px;
+}
+
+.footer-icon li .icon-inline {
+  background: #48455a;
+}
+
+.footer-icon li .icon-inline:hover {
+  background: #fe6347;
+}
+
+.footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-text li {
+  padding: 0px 25px;
+  border-right: 2px solid #999999;
+}
+
+.footer-text li:last-child {
+  border-right: none;
+}
+
+.footer-text li h6 {
+  font-weight: 400;
+}
+
+.footer-text li h6 span {
+  color: #fe6347;
+}
+
+.footer-text li h6 a {
+  color: #fe6347;
+}
+
+@media (max-width: 767px) {
+  .footer-part {
+    padding: 60px 0px;
+  }
+  .footer-logo a img {
+    width: 145px;
+  }
+  .footer-icon {
+    margin-bottom: 45px;
+  }
+  .footer-icon li {
+    margin: 0px 10px;
+  }
+  .footer-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-text li {
+    padding: 0px;
+    border: none;
+    margin: 5px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-part {
+    padding: 60px 0px;
+  }
+}
+
+/*=====================================
             BANNER PART STYLE
 ======================================*/
 .banner-part {
@@ -2050,7 +2321,8 @@ button:focus {
   margin-bottom: 10px;
 }
 
-.cate-btn p {
+.cate-btn span {
+  display: block;
   text-transform: capitalize;
 }
 
@@ -2331,7 +2603,7 @@ button:focus {
             CODING PART STYLE
 ======================================*/
 .coding-part {
-  padding: 145px 0px 0px;
+  padding: 143px 0px 0px;
 }
 
 .coding-heading h2 {
@@ -2441,7 +2713,7 @@ button:focus {
           PORTFOLIO PART STYLE
 ======================================*/
 .port-part {
-  padding: 145px 0px 0px;
+  padding: 135px 0px 0px;
 }
 
 .port-part .container {
@@ -2866,7 +3138,7 @@ button:focus {
             BLOG PART STYLE
 ======================================*/
 .blog-part {
-  padding: 140px 0px 0px;
+  padding: 144px 0px 0px;
 }
 
 .blog-heading h2 {

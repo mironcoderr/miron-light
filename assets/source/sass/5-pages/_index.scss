@@ -219,7 +219,8 @@
         margin-bottom: 10px;
     }
 
-    p {
+    span {
+        display: block;
         text-transform: capitalize;
     }
 }
@@ -530,7 +531,7 @@
             CODING PART STYLE
 ======================================*/
 .coding-part{
-    padding: 145px 0px 0px;
+    padding: 143px 0px 0px;
 }
 
 .coding-heading {
@@ -647,7 +648,7 @@
           PORTFOLIO PART STYLE
 ======================================*/
 .port-part{
-    padding: 145px 0px 0px;
+    padding: 135px 0px 0px;
 
     .container {
         max-width: 1300px;
@@ -1144,7 +1145,7 @@
             BLOG PART STYLE
 ======================================*/
 .blog-part{
-    padding: 140px 0px 0px;
+    padding: 144px 0px 0px;
 }
 
 .blog-heading {

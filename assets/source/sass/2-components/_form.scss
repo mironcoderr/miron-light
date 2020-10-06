@@ -81,3 +81,86 @@
         }
     }
 }
+
+/*=====================================
+            CONTACT FORM STYLE
+======================================*/
+.input-grid {
+    @include flex__center;
+
+    input {
+        width: 100%;
+        margin: 10px;
+        border: none;
+        outline: none;
+        height: 50px;
+        padding: 0px 20px;
+        border-radius: 30px;
+        color: $heading__color;
+        background: $light__color;
+        border: 1px solid transparent;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 30px;
+        height: 200px;
+        width: 100%;
+        border: 1px solid transparent;
+        color: $heading__color;
+        background: $light__color;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-transform: capitalize;
+    margin-top: 9px;
+    cursor: pointer;
+    color: $placeholder__color;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.input-btn {
+    .btn {
+        margin: 30px 0px 0px 10px;
+    }
+}
+
+// CONTACT FORM RESPONSIVE STYLE
+
+@media (max-width: 991px) {
+    .contact-form {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .input-grid {
+        flex-direction: column;
+    }
+
+    .input-btn {
+        .btn {
+            margin: 30px 0px 0px;
+        }
+    }
+}
