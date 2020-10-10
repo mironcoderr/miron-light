@@ -12,6 +12,7 @@
 
         <!-- FOR FONT ICON -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/icon/flaticon/index/flaticon.css">
         <link rel="stylesheet" href="assets/icon/flaticon/portfolio/flaticon.css">
 
         <!-- FOR SLICK SLIDER -->
@@ -30,54 +31,64 @@
         <!--=====================================
                     NAVBAR PART START
         =======================================-->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar-part">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                pages
+                <div class="navbar-content">
+                    <a class="navbar-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
+                    <div class="navbar-slide">
+                        <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
+                        <ul class="navbar-list">
+                            <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="service.html">services</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="resume.html">resume</a></li>
+                            <li class="navbar-dropdown">
+                                <a class="navbar-link dropdown-indicator" href="#">
+                                    <span>portfolio</span>
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <ul class="dropdown-list">
+                                    <li><a class="dropdown-link" href="portfolio-grid.html">Portfolio Grid</a></li>
+                                    <li><a class="dropdown-link" href="portfolio-details.html">Portfolio Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item navbar-dropdown">
+                                <a class="navbar-link dropdown-indicator" href="#">
+                                    <span>pages</span>
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <ul class="dropdown-list">
+                                    <li><a class="dropdown-link" href="#">tutorial</a></li>
+                                    <li><a class="dropdown-link" href="#">source code</a></li>
+                                    <li><a class="dropdown-link" href="#">payment system</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item navbar-dropdown">
+                                <a class="navbar-link dropdown-indicator" href="#">
+                                    <span>blogs</span>
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <ul class="dropdown-list">
+                                    <li><a class="dropdown-link" href="blog-grid.html">Blog grid</a></li>
+                                    <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
+                                    <li><a class="dropdown-link" href="blog-grid-leftbar.html">blog grid leftbar</a></li>
+                                    <li><a class="dropdown-link" href="blog-grid-rightbar.html">blog grid rightbar</a></li>
+                                    <li><a class="dropdown-link" href="blog-details-leftbar.html">blog details leftbar</a></li>
+                                    <li><a class="dropdown-link" href="blog-details-rightbar.html">blog details rightbar</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item"><a class="navbar-link" href="contact.html">contact</a></li>
+                        </ul>
+                        <form class="navbar-src">
+                            <input type="text" placeholder="Search for quick...">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </form>
+                        <div class="navbar-btn">
+                            <a class="btn btn-inline" href="#">
+                                <i class="fas fa-code"></i>
+                                <span>hire me</span>
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">tutorial</a>
-                                <a class="dropdown-item" href="#">source code</a>
-                                <a class="dropdown-item" href="#">payment</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                blogs
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">blog list</a>
-                                <a class="dropdown-item" href="#">blog details</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
-                    </ul>
-                    <form class="navbar-src">
-                        <input type="text" placeholder="Search for quick...">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </form>
-                    <div class="navbar-btn">
-                        <a class="btn btn-inline" href="#">
-                            <i class="fas fa-code"></i>
-                            <span>hire me</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -563,89 +574,6 @@
         </section>
         <!--=====================================
                 INNER PORTFOLIO PART END
-        =======================================-->
-
-
-        <!--=====================================
-                    CONTACT PART START
-        =======================================-->
-        <section class="contact-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading contact-heading">
-                            <p>contact <span>me</span></p>
-                            <h2>I'm always open to discussion time spand</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <a class="icon icon-inline"><i class="flaticon-telephone"></i></a>
-                            </div>
-                            <div class="address-text">
-                                <h4>phone</h4>
-                                <p>(+880) 1838288389 <span>(+880) 1941101915</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <a class="icon icon-inline"><i class="flaticon-mail"></i></a>
-                            </div>
-                            <div class="address-text">
-                                <h4>email</h4>
-                                <p>mironmahmud018@gmail.com <span>mironbonny1994@gmail.com</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <a class="icon icon-inline"><i class="flaticon-pin"></i></a>
-                            </div>
-                            <div class="address-text">
-                                <h4>location</h4>
-                                <p>1420 East Delpara <span>Narayanganj, Bangladesh</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <form class="contact-form">
-                            <div class="input-grid">
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="input-grid">
-                                <input type="text" placeholder="Subject">
-                                <input type="file">
-                            </div>
-                            <div class="input-grid">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                            <div class="input-btn">
-                                <button class="btn btn-inline" type="submit">
-                                    <i class="fas fa-paper-plane"></i>
-                                    <span>send message</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <div class="contact-img">
-                            <img src="assets/images/contact.png" alt="contact">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    CONTACT PART END
         =======================================-->
 
 

@@ -2,16 +2,18 @@
 
 
 /*=====================================
-            ALL FORM STYLE
+         FORM ROUND GRID STYLE
 ======================================*/
-.form-grid {
+.form-round-grid {
     @include flex__center;
     justify-content: space-between;
-    background: $shape__one;
-    border-radius: 8px;
+    background: $wh__color;
+    border-radius: 30px;
+    padding: 6px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
 
     input {
-        width: 100%;
+        width: 293px;
         height: 45px;
         border: none;
         background: transparent;
@@ -19,10 +21,30 @@
     }
 
     .btn {
-        width: 180px;
-        height: 45px;
-        padding: 14px 0px;
-        text-align: center;
+        padding: 0px;
+
+        i {
+            margin: 0px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+
+    .btn-inline {
+        &:hover {
+            transform: translateY(0px);
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .form-round-grid {
+        input {
+            width: 83%;
+        }
     }
 }
 
@@ -89,10 +111,10 @@
     @include flex__center;
 
     input {
-        width: 100%;
+        width: 297px;
         margin: 10px;
         border: none;
-        outline: none;
+        outline: none; 
         height: 50px;
         padding: 0px 20px;
         border-radius: 30px;
@@ -148,6 +170,14 @@
 
 // CONTACT FORM RESPONSIVE STYLE
 
+@media (max-width: 767px) {
+    .input-grid {
+        input {
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .contact-form {
         text-align: center;
@@ -161,6 +191,14 @@
     .input-btn {
         .btn {
             margin: 30px 0px 0px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .input-grid {
+        input {
+            width: 245px;
         }
     }
 }
@@ -228,6 +266,56 @@
         }
     }
 }
+
+/*=====================================
+            FORM BLOCK STYLE
+======================================*/
+.form-block {
+    input {
+        width: 100%;
+        margin: 10px;
+        border: none;
+        outline: none; 
+        height: 50px;
+        padding: 0px 20px;
+        border-radius: 30px;
+        color: $heading__color;
+        background: $light__color;
+        border: 1px solid transparent;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 30px;
+        height: 200px;
+        width: 100%;
+        border: 1px solid transparent;
+        color: $heading__color;
+        background: $light__color;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
 
 
 

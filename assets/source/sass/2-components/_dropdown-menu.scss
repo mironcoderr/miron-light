@@ -4,47 +4,63 @@
 /*=====================================
             DROPDOWN MENU STYLE
 ======================================*/
-.dropdown-toggle {
-    &::after {
-        margin-left: 0px;
-    }
-}
+.navbar-dropdown {
+    position: relative;
 
-.dropdown-menu {
-    top: 120px;
-    border: none;
-    padding: 0px;
-    width: 240px;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    border-top: 2px solid $brand__color;
-    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
-    @include cursor__transition;
-}
-
-.dropdown {
     &:hover {
-        .dropdown-menu {
+        .dropdown-list {
             visibility: visible;
             opacity: 1;
-            top: 94px;
+            top: 98px;
         }
     }
 }
 
-.dropdown-item {
-    color: #777;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 13px 25px;
-    text-transform: capitalize;
-    border-bottom: 1px solid #eee;
+.dropdown-indicator {
+    @include flex__center;
+    justify-content: flex-start;
 
-    &:last-child {
-        border-bottom: none;
+    span {
+        margin-right: 5px;
     }
+
+    i {
+        font-size: 10px;
+    }
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    z-index: 1;
+    width: 240px;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    border-radius: 3px;
+    background: $wh__color;
+    border-top: 2px solid $brand__color;
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+    @include cursor__transition;
+
+    li {
+        border-bottom: 1px solid $border__color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.dropdown-link {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    color: $body__color;
+    text-transform: capitalize;
+    @include cursor__transition;
 
     &:hover {
         color: $wh__color;
@@ -52,41 +68,37 @@
     }
 }
 
-// DROPDOWN MENU RESPONSIVE STYLE
+.dropdown-toggle {
+    &::after {
+        margin-left: 2px;
+    }
+}
 
-@media (max-width: 767px) {
-    .dropdown-menu {
-        display: none;
-        opacity: 1;
+// DROPDOWN RESPONSIVE PART STYLE
+@media (max-width: 1270px) {
+    .navbar-dropdown {
+        position: inherit;
+    }
+
+    .dropdown-indicator {
+        justify-content: space-between;
+
+        i {
+            @include cursor__transition;
+        }
+    }
+
+    .dropdown-indicator.active {
+        i {
+            transform: rotate(45deg);
+        }
+    }
+    
+    .dropdown-list {
+        position: inherit;
         visibility: visible;
-        margin: 0 auto;
-    }
-}
-  
-@media (max-width: 575px) {
-    .dropdown-menu {
+        opacity: 1;
         width: 100%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .dropdown-menu {
-        display: block;
-    }
-
-    .navbar-nav {
-        .dropdown-menu {
-            position: absolute;
-        }
-    }
-
-    .dropdown {
-        &:hover {
-            .dropdown-menu {
-                visibility: visible;
-                opacity: 1;
-                top: 30px;
-            }
-        }
+        display: none;
     }
 }

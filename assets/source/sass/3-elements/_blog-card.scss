@@ -6,6 +6,7 @@
 ======================================*/
 .blog-card {
     border-radius: 10px;
+    margin-bottom: 50px;
 
     &:hover {
         .blog-oly {
@@ -56,11 +57,11 @@
         position: absolute;
         top: 25px;
         left: 25px;
-        padding: 6px 15px;
+        padding: 4px 12px;
         background: $brand__color;
         border-radius: 5px;
         color: $wh__color;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 22px;
         text-transform: capitalize;
     }

@@ -4,41 +4,98 @@
 /*======================================
            NAVBAR PART STYLE
 =======================================*/
-.navbar {
+.navbar-part {
     padding: 0px 15px;
 
     .container {
-        max-width: 1300px;
+        max-width: 1300px
     }
 }
 
-.navbar-fixed{
+.navbar-fixed {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
+    z-index: 2;
     background: $shape__one;
-    box-shadow: 0px 3px 15px rgba(85, 85, 85, 0.2);
-    z-index: 3;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
+.navbar-content {
+    @include flex__center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
     img {
         width: 130px;
     }
 }
 
-.nav-link {
+.navbar-toggle {
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+
+    i {
+        background: $brand__color;
+        color: $wh__color;
+        border-radius: 3px;
+        padding: 8px 10px;
+        font-size: 16px;
+        @include cursor__transition;
+
+        &:hover {
+            color: $wh__color;
+            background: $heading__color;
+        }
+    }
+}
+
+.navbar-slide {
+    @include flex__center;
+}
+
+.navbar-cross {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+
+    i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 16px;
+        color: $heading__color;
+        background: $wh__color;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+        @include cursor__transition;
+
+        &:hover {
+            color: $wh__color;
+            background: $brand__color;
+        }
+    }
+}
+
+.navbar-list {
+    @include flex__center;
+}
+
+.navbar-link {
     font-size: 15px;
     font-weight: 500;
-    padding: 35px 15px !important;
+    padding: 35px 15px;
     border-radius: 5px;
     color: $heading__color;
     transform: skewX(-5deg);
     text-transform: capitalize;
     @include cursor__transition;
-    position: relative;
-    z-index: 1;
 
     &:hover {
         color: $wh__color;
@@ -46,92 +103,98 @@
     }
 }
 
-.navbar-nav {
-    .active {
-        .nav-link {
-            color: $wh__color;
-            background: $brand__color;
-        }
+.navbar-item.active {
+    .navbar-link {
+        color: $wh__color;
+        background: $brand__color;
     }
 }
 
 .navbar-btn {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
-// NAVBAR RESPONSIVE STYLE
+// NAVBAR RESPONSIVE PART STYLE
+@media (max-width: 1270px) {
 
-@media (max-width: 991px) {
-    .navbar {
-        padding: 5px 15px;
+    .navbar-part {
+        padding: 8px 15px;
     }
-    
-    .navbar-brand {
+
+    .navbar-logo {
         img {
             width: 110px;
         }
     }
-    
-    .navbar-collapse {
-        text-align: center;
-        padding: 30px 0px;
+
+    .navbar-toggle {
+        display: block;
     }
-    
-    .navbar-toggler {
-        background: $brand__color;
-        padding: 8px 10px;
-        font-size: 16px;
-    
-        i {
-            color: $wh__color;
+
+    .navbar-slide {
+        position: fixed;
+        top: 0px;
+        right: -260px;
+        z-index: 3;
+        width: 250px;
+        height: 100vh;
+        padding: 70px 15px 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #f9f9f9;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+        transition: all linear .4s;
+    }
+
+    .navbar-slide.active {
+        right: 0px;
+    }
+
+    .navbar-cross {
+        display: block;
+    }
+
+    .navbar-list {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+
+        li {
+            border-bottom: 1px solid $border__color;
         }
     }
-    
-    .nav-item {
-        margin: 8px 0px;
-    }
-    
-    .nav-link {
-        padding: 3px 15px !important;
-        display: inline-block;
+
+    .navbar-link {
+        width: 100%;
+        padding: 12px 15px;
     }
 
     .navbar-src {
-        display: inline-block;
-        margin-bottom: 15px;
         margin-left: 0px;
-    }
-
-    .navbar-btn {
-        width: 180px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: center;
         margin-bottom: 15px;
-    }
-}
 
-@media (min-width: 992px) and (max-width: 1300px) {
-    .navbar-brand {
-        img {
-            width: 115px;
+        &:focus-within {
+            input {
+                width: 160px;
+            }
         }
-    }
-
-    .navbar-src {
-        display: none;
     }
 
     .navbar-btn {
-        a {
-            font-size: 15px;
-            padding: 15px 32px;
+        margin-left: 0px;
+        width: 100%;
+
+        .btn {
+            display: block;
+            padding: 14px 0px;
+            margin-bottom: 50px;
         }
     }
 }
 
+
+
+
+ 

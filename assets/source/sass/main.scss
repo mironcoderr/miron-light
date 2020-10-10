@@ -20,6 +20,7 @@
 @import "2-components/_select-option.scss";
 @import "2-components/_pagination.scss";
 @import "2-components/_nav-tabs.scss";
+@import "2-components/_star-rating.scss";
 
 //=======================================
 //          3 - ELEMENTS FOLDER
@@ -48,7 +49,12 @@
 //          5 - PAGES FOLDER
 //=======================================
 @import "5-pages/_index.scss";
-@import "5-pages/_portfolio.scss";
+@import "5-pages/_service.scss";
+@import "5-pages/_resume.scss";
+@import "5-pages/_portfolio-grid.scss";
+@import "5-pages/_portfolio-details.scss";
+@import "5-pages/_blog-grid.scss";
+@import "5-pages/_blog-details.scss";
 
 //=======================================
 //          6 - RESPONSIVE FOLDER
