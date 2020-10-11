@@ -1,3 +1,60 @@
+/*========================================
+Author Name:   Mironitem
+Template Type: Personal Portfolio
+Email:         mironbonny1994@gmail.com
+Facebook:      https://www.facebook.com/mironcoder/
+Linkedin:      https://www.linkedin.com/in/mironcoder/
+Brand Color:   #fe6347, #48455a
+Icon:          Flat Icon, Font Awesome
+Text font:     Poppins
+Version:       v1.0.01
+-----------------------------
+
+Thanks for purchasing the template. I hope the templete will come in handy. If you want to develop this template then you can contact me, I will develop you at a very reasonable price. In addition, I am available for any kind of support.
+
+By the way,
+Dont't forgot your feedback or ratings.
+
+-----------------------------
+## TABLE OF COMPONENT STYLE
+-----------------------------
+01. GEAR BUTTON
+02. BACK2TOP BUTTON
+03. ALL FORM
+04. ALL BUTTON
+05. DROPDOWN MENU
+06. ALL ICON
+07. SLIDER ARROW
+08. BREADCRUMB
+09. SELECT OPTION
+10. PAGINATION
+11. NAV TABS
+12. STAR RATING
+
+-----------------------------
+## TABLE OF ELEMENT STYLE
+-----------------------------
+01. SECTION HEADING
+02. RESUME CARD
+03. REFERENCE
+04. SERVICE CARD
+05. PORTFOLIO CARD
+06. SKILLS CARD
+07. COUNTER CARD
+08. PRICING CARD
+09. TESTIMONIAL CARD
+10. BLOG CARD
+11. FEATURE CARD
+
+-----------------------------
+## TABLE OF LAYOUT STYLE
+-----------------------------
+01. NAVBAR
+02. CONTACT
+03. FOOTER 
+04. INNER BANNER
+
+=========================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 /*=====================================
             ALL COMMON STYLE
@@ -116,6 +173,88 @@ textarea::placeholder {
 
 button:focus {
   outline: none;
+}
+
+/*=====================================
+        GEAR BUTTON PART STYLE
+======================================*/
+.gear-btn {
+  position: fixed;
+  top: 30%;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+  -webkit-box-shadow: -3px 0px 8px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.gear-btn img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+/*=====================================
+        BACK2TOP BUTTON PART STYLE
+======================================*/
+.back2top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: none;
+}
+
+.back2top-btn i {
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe6347), to(#ee563b));
+  background: linear-gradient(#fe6347, #ee563b);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(254, 99, 71, 0.5);
+          box-shadow: 0px 0px 15px 3px rgba(254, 99, 71, 0.5);
+  -webkit-animation: mahmud 2s infinite;
+          animation: mahmud 2s infinite;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+@-webkit-keyframes mahmud {
+  0% {
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-bottom: 15px;
+  }
+}
+
+@keyframes mahmud {
+  0% {
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .back2top-btn i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+  }
 }
 
 /*=====================================
@@ -2741,7 +2880,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .banner-oly {
+  .banner-bg {
     padding: 40px 0px 50px;
     background-position: right;
   }
